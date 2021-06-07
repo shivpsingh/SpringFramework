@@ -1,5 +1,8 @@
 package com.codedevunlocked.iocdemo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class HappyFortuneService implements FortuneService {
 
 	@Override

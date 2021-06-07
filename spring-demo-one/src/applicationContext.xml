@@ -9,22 +9,25 @@
 
 	<!-- Adding Properties file -->
 
-	<context:property-placeholder location="classpath:coach.properties"/>
+<!-- 	<context:property-placeholder location="classpath:coach.properties"/> -->
 
 	<!-- Define beans -->
 	
-	<bean id="myFortune" class="com.codedevunlocked.iocdemo.HappyFortuneService" />
+<!-- 	<bean id="myFortune" class="com.codedevunlocked.iocdemo.HappyFortuneService" /> -->
 	
 	<!-- 
 	<bean id="myCoach" class="com.codedevunlocked.iocdemo.BaseballCoach">
 		<constructor-arg ref="myFortune" />
 	</bean>
 	 -->
+<!-- 	 
 	<bean id="myCoach" class="com.codedevunlocked.iocdemo.TrackCoach">
 		<property name="fs" ref="myFortune" />
 		<property name="coachName" value="${coach.coachname}" />
 	</bean>
-	
+	 -->
+	 
+	 <context:component-scan base-package="com.codedevunlocked.iocdemo" />
 	
 </beans>
 
